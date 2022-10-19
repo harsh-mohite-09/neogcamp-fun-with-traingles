@@ -7,10 +7,14 @@ const message = document.querySelector("#output");
 checkButton.addEventListener("click", clickHandler);
 
 function clickHandler() {
-  if (~~angleOne.value + ~~angleTwo.value + ~~angleThree.value === 180) {
-    showMessageTrue("YaY! The angles form a traingle! 🥳");
+  if (~~angleOne.value > 0 && ~~angleTwo.value > 0 && ~~angleThree.value > 0) {
+    if (~~angleOne.value + ~~angleTwo.value + ~~angleThree.value === 180) {
+      showMessageTrue("YaY! The angles form a traingle! 🥳");
+    } else {
+      showMessageFalse("Oh! The angles don't form a traingle.");
+    }
   } else {
-    showMessageFalse("Oh! The angles don't form a traingle.");
+    showMessageFalse("Please enter only positive numbers!");
   }
 }
 
