@@ -29,13 +29,16 @@
         </div>
       </nav>
       <h1 class="heading">Calculate are of Triangle</h1>
-      <label for="side-1" class="label">Enter first side of triangle</label>
-      <input id="side-1" class="input" type="number" />
-      <label for="side-2" class="label">Enter second side of triangle</label>
-      <input id="side-2" class="input" type="number" />
-      <label for="side-3" class="label">Enter third side of triangle</label>
-      <input id="side-3" class="input" type="number" />
-      <button id="check-button">Calculate</button>
+      <form onsubmit="return false">
+        <label for="side-1" class="label">Enter first side of triangle</label>
+        <input id="side-1" class="input" type="number" min="1" required />
+        <label for="side-2" class="label">Enter second side of triangle</label>
+        <input id="side-2" class="input" type="number" min="1" required />
+        <label for="side-3" class="label">Enter third side of triangle</label>
+        <input id="side-3" class="input" type="number" min="1" required />
+        <button id="check-button">Calculate</button>
+      </form>
+
       <p id="output"></p>
     </div>
     <footer class="footer-container">

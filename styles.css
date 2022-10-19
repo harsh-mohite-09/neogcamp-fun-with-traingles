@@ -149,3 +149,8 @@ img {
   padding: 1rem 0;
   font-family: "Times New Roman", Times, serif;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}

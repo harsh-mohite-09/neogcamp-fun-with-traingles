@@ -25,11 +25,14 @@
         </div>
       </nav>
       <h1 class="heading">Calculate Hypotenuse of a triangle</h1>
-      <label for="base" class="label">Enter base value (a)= </label>
-      <input id="base" class="input" type="number" />
-      <label for="height" class="label">Enter height value (b)= </label>
-      <input id="height" class="input" type="number" />
-      <button id="check-button">Calculate Hypotenuse</button>
+
+      <form onsubmit="return false">
+        <label for="base" class="label">Enter base value (a)= </label>
+        <input id="base" class="input" type="number" min="0" required />
+        <label for="height" class="label">Enter height value (b)= </label>
+        <input id="height" class="input" type="number" min="0" required />
+        <button id="check-button">Calculate Hypotenuse</button>
+      </form>
       <h1 class="mid-header">Hypotenuse Formula</h1>
       <p class="mid-para">√(base<sup>2</sup> + height<sup>2</sup>)</p>
       <p id="output"></p>

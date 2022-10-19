@@ -25,13 +25,17 @@
         </div>
       </nav>
       <h1 class="heading">Angles of Traingle</h1>
-      <label for="angle-1" class="label">Angle 1 </label>
-      <input id="angle-1" class="input" type="number" />
-      <label for="angle-2" class="label">Angle 2 </label>
-      <input id="angle-2" class="input" type="number" />
-      <label for="angle-3" class="label">Angle 3 </label>
-      <input id="angle-3" class="input" type="number" />
-      <button id="check-button">Is Triangle?</button>
+
+      <form onsubmit="return false">
+        <label for="angle-1" class="label">Angle 1 </label>
+        <input id="angle-1" class="input" type="number" min="1" required />
+        <label for="angle-2" class="label">Angle 2 </label>
+        <input id="angle-2" class="input" type="number" min="1" required />
+        <label for="angle-3" class="label">Angle 3 </label>
+        <input id="angle-3" class="input" type="number" min="1" required />
+        <button id="check-button">Is Triangle?</button>
+      </form>
+
       <p id="output"></p>
     </div>
     <footer class="footer-container">
