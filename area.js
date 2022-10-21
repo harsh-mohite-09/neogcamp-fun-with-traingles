@@ -15,7 +15,7 @@ function clickHandler() {
     const n = s * (s - a) * (s - b) * (s - c);
     if (n > 0) {
       const area = Math.sqrt(n);
-      showMessage("The area of the triangle is " + area);
+      showMessage("The area of the triangle is " + area.toFixed(2));
     } else {
       showMessageFalse("Given side lengths can never form a triangle!");
     }

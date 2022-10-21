@@ -10,7 +10,7 @@ function clickHandler() {
     const hypo = Math.sqrt(
       Math.pow(~~base.value, 2) + Math.pow(~~height.value, 2)
     );
-    showMessage("The length of the hypotenuse is " + hypo);
+    showMessage("The length of the hypotenuse is " + hypo.toFixed(2));
   } else {
     showMessageFalse("Please enter only positive numbers!");
   }
